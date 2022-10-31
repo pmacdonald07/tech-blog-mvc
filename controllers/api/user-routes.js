@@ -25,7 +25,7 @@ router.get("/:id", (req, res) => {
     include: [
       {
         model: Post,
-        attributes: ["id", "title", "post_url", "created_at"],
+        attributes: ["id", "title", "content", "created_at"],
       },
       {
         model: Comment,
@@ -52,7 +52,7 @@ router.get("/:id", (req, res) => {
 
 // POST /api/users
 router.post("/", (req, res) => {
-  // expects {username: 'Lernantino', email: 'lernantino@gmail.com', password: 'password1234'}
+  // expects {username: 'Lernantino', password: 'password1234'}
   User.create({
     username: req.body.username,
     password: req.body.password,
