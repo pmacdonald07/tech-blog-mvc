@@ -1,0 +1,13 @@
+<div class="comments">
+  {{#each this}}
+     <article class="card mb-3">
+    <div class="card-title bg-secondary d-flex justify-content-between text-light p-2 rounded align-items-center">
+            <span class="text-center">Comment by {{user.username}} on {{format_date created_at}}</span>
+      </div>
+    <div class="card-body">
+        <p class="card-text">{{comment_text}}</p>
+    </div>
+</article>
+  {{/each}}
+</div>
+

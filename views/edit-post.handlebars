@@ -1,0 +1,18 @@
+<section class="container">
+    <h2>Editing: "{{post.title}}"</h2>
+    <form class="edit-post-form">
+        <div class="form-group">
+            <label for="title-edit">Title</label>
+            <input type="text" class="form-control mb-2" id="edit-post-title" name="title-edit" value="{{post.title}}">
+        </div>
+        <div class="form-group">
+            <label for="content-edit">Content</label>
+            <textarea type="text" class="form-control mb-2" id="edit-post-content" name="content-edit" rows="3">{{post.content}}</textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Save</button>
+        <button type="button" class="btn btn-primary delete-post-btn">Delete Post</button>
+    </form>
+</section>
+
+<script src="/javascript/edit-post.js"></script>
+<script src="/javascript/delete-post.js"></script>

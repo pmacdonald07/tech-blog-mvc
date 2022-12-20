@@ -3,11 +3,11 @@
     <form class="new-post-form">
         <div class="form-group">
             <label for="titleInput">Title</label>
-            <input type="text" class="form-control mb-2" id="post-title" placeholder="Enter title">
+            <input type="text" class="form-control mb-2" id="post-title" name="post-title" placeholder="Enter title">
         </div>
         <div class="form-group">
             <label for="contentInput">Content</label>
-            <textarea class="form-control mb-2" id="post-content" placeholder="Enter content" rows="3"></textarea>
+            <textarea class="form-control mb-2" id="post-content" name="post-content" placeholder="Enter content" rows="3"></textarea>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
@@ -19,7 +19,12 @@
       {{#each posts as |post|}}
     <div>
         {{> post-info post}}
+        <a href="/dashboard/edit/{{post.id}}" class="edit-link">
+        <button class="btn btn-primary mb-2">Edit Post</button>
+        </a>
     </div>
     {{/each}}
 </section>
 {{/if}}
+
+<script src="/javascript/add-post.js"></script>
