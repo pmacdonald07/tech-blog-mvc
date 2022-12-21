@@ -2,8 +2,8 @@
   
   This application is live here:
 
-  ## Description
-    This is a full-stack application that serves as a blog-style website where users can post an comment on other user's posts. Tech Blog follows the MVC paradigm (Model, View, Controller), uses Handlebars as the templating language for server-side rendering, and uses Sequelize as the ORM.
+## Description
+This is a full-stack application that serves as a blog-style website where users can post an comment on other user's posts. Tech Blog follows the MVC paradigm (Model, View, Controller), uses Handlebars as the templating language for server-side rendering, and uses Sequelize as the ORM.
   ## Table of Contents
   [Installation](#installation)
 
